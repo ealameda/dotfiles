@@ -1,0 +1,8 @@
+[user]
+	name = Eldon Alameda
+	email = alameda.eldon@gmail.com
+[color]
+	ui = auto
+[alias]
+  st = status
+  co = checkout

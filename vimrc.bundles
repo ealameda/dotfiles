@@ -1,0 +1,62 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+" Let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+Bundle 'tpope/vim-sensible'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-rake'
+Bundle 'tpope/vim-endwise'
+Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
+Bundle 'Lokaltog/powerline'
+Bundle 'bronson/vim-trailing-whitespace'
+Bundle 'kien/ctrlp.vim'
+
+" Colors
+Bundle 'vim-scripts/Colour-Sampler-Pack'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'twerth/ir_black'
+Bundle 'tpope/vim-vividchalk'
+Bundle 'vim-scripts/molokai'
+Bundle 'vim-scripts/pyte'
+Bundle 'telamon/vim-color-github'
+Bundle 'larssmit/vim-getafe'
+Bundle 'TechnoGate/janus-colors'
+Bundle 'nanotech/jellybeans.vim'
+
+" Languages
+Bundle 'tpope/vim-haml'
+Bundle 'pangloss/vim-javascript'
+Bundle 'tpope/vim-cucumber'
+Bundle 'tpope/vim-markdown'
+Bundle 'ajf/puppet-vim'
+Bundle 'nono/vim-handlebars'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-git'
+Bundle 'tpope/vim-haml'
+Bundle 'juvenn/mustache.vim'
+Bundle 'timcharper/textile.vim'
+Bundle 'skwp/vim-rspec'
+Bundle 'cakebaker/scss-syntax.vim'
+Bundle 'chrisbra/csv.vim'
+Bundle 'mmalecki/vim-node.js'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'groenewege/vim-less'
+Bundle 'wlangstroth/vim-haskell'
+Bundle 'slim-template/vim-slim'
+Bundle 'jimenezrick/vimerl'
+Bundle 'sunaku/vim-ruby-minitest'
+Bundle 'guns/vim-clojure-static'
+Bundle 'elixir-lang/vim-elixir'
+Bundle 'jnwhiteh/vim-golang'
+Bundle 'tpope/vim-liquid'
+Bundle 'othree/javascript-libraries-syntax.vim'
+
+filetype on
