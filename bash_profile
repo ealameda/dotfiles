@@ -1,5 +1,5 @@
 . "$HOME/.bashrc"
-[[ -s "/Users/eldon/.rvm/scripts/rvm" ]] && source "/Users/eldon/.rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 export CC=gcc-4.2
 export CDPATH=.:~:~/Code
