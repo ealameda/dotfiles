@@ -48,6 +48,11 @@ au BufNewFile,BufReadPost *.coffee setl tabstop=2 softtabstop=2 shiftwidth=2 exp
 " No show command
 autocmd VimEnter * set nosc
 
+" NERDCommenter
+map  <D-/> <plug>NERDCommenterToggle<CR>
+imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
+map <leader>/ <plug>NERDCommenterToggle<CR>
+
 " NERDTree
 nmap <leader>n :NERDTreeToggle<CR>
 let NERDTreeHighlightCursorline=1
@@ -68,6 +73,14 @@ let g:ctrlp_max_depth = 5
 nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>s :call RunNearestSpec()<CR>
 nnoremap <Leader>l :call RunLastSpec()<CR>
+
+" Fugitive
+nmap <leader>gb :Gblame<CR>
+nmap <leader>gs :Gstatus<CR>
+nmap <leader>gd :Gdiff<CR>
+nmap <leader>gl :Glog<CR>
+nmap <leader>gc :Gcommit<CR>
+nmap <leader>gp :Git push<CR>
 
 
 " Yank from current cursor position to end of line
