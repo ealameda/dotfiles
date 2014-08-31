@@ -2,7 +2,16 @@
 	name = Eldon Alameda
 	email = alameda.eldon@gmail.com
 [color]
-	ui = auto
+	ui = true
 [alias]
-  st = status
-  co = checkout
+	st = status -s
+	co = checkout
+	lg = log --oneline --decorate --all --graph
+[core]
+	autocrlf = input
+[push]
+	default = simple
+[pull]
+	rebase = true
+[rerere]
+	enabled = true
