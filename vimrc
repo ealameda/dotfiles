@@ -23,7 +23,7 @@ endif
 
 filetype plugin indent on
 
-color jellybeans
+color mustang
 
 " Automatic Formating
 autocmd BufWritePre *.rb :%s/\s\+$//e
