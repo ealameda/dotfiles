@@ -16,6 +16,8 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+set splitbelow
+set splitright
 
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
@@ -112,11 +114,13 @@ set wildignore+=*.swp,*~,._*
 set backupdir^=~/.vim/_backup//    " where to put backup files.
 set directory^=~/.vim/_temp//      " where to put swap files.
 
-" Movement shortcuts
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
+"  Movement shortcuts
+let g:tmux_navigator_no_mappings = 1
+
+nnoremap <silent> <c-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <c-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <c-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <c-l> :TmuxNavigateRight<cr>
 
 " Map Command-# to switch tabs
 map  <D-0> 0gt
