@@ -1,7 +1,7 @@
 . "$HOME/.bashrc"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
-export CC=gcc-4.2
+# export CC=gcc-4.2.1
 export CDPATH=.:~:~/Code
 
 PATH=$PATH:/usr/local/mysql/bin
