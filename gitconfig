@@ -15,3 +15,5 @@
 	rebase = true
 [rerere]
 	enabled = true
+[credential]
+	helper = osxkeychain
