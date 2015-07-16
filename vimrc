@@ -1,3 +1,4 @@
+let mapleader = "\<Space>"
 set cursorline
 set expandtab
 set modelines=0
@@ -71,10 +72,15 @@ let g:ctrlp_by_filename = 1
 let g:ctrlp_max_files = 600
 let g:ctrlp_max_depth = 5
 
+" Vtr Runner
+nnoremap <leader>irb :VtrOpenRunner {'orientation': 'h', 'percentage': 50, 'cmd': 'irb'}<cr>
+let g:rspec_command = "call VtrSendCommand('rspec {spec}')"
+
 " Vim-Rspec mappings
 nnoremap <Leader>t :call RunCurrentSpecFile()<CR>
 nnoremap <Leader>s :call RunNearestSpec()<CR>
 nnoremap <Leader>l :call RunLastSpec()<CR>
+nnoremap <Leader>a :call RunAllSpecs()<CR>
 
 " Fugitive
 nmap <leader>gb :Gblame<CR>
@@ -147,6 +153,11 @@ imap <D-9> <Esc>9gt
 :nnoremap <CR> :nohlsearch<CR><CR>
 command! W :w
 
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
+" zoom a vim pane, <C-w>= to re-balance
+nnoremap <leader>- :wincmd _<cr>:wincmd \|<cr>
+nnoremap <leader>= :wincmd =<cr>
 
 function! Tab_Or_Complete()
   if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
@@ -157,3 +168,4 @@ function! Tab_Or_Complete()
 endfunction
 :inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 :set dictionary="/usr/dict/words"
+:iabbrev </ </<C-X><C-O>

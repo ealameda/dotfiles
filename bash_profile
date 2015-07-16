@@ -4,7 +4,7 @@
 # export CC=gcc-4.2.1
 export CDPATH=.:~:~/Code
 
-PATH=$PATH:/usr/local/mysql/bin
+PATH=$PATH:/usr/local/mysql/bin:/usr/local/bin:/usr/local/sbin:$PATH
 
 [[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
 
