@@ -56,6 +56,7 @@ Plugin 'jimenezrick/vimerl'
 Plugin 'sunaku/vim-ruby-minitest'
 Plugin 'guns/vim-clojure-static'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 Plugin 'fatih/vim-go'
 Plugin 'tpope/vim-liquid'
 Plugin 'othree/javascript-libraries-syntax.vim'
