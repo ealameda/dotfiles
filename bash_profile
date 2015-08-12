@@ -5,6 +5,7 @@
 export CDPATH=.:~:~/Code
 
 PATH=$PATH:/usr/local/mysql/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 
 [[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
 
