@@ -65,6 +65,15 @@ let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
 let g:syntastic_mode_map = { 'mode': 'passive' }
 let g:syntastic_ruby_exec = '~/.rvm/rubies/ruby-2.0.0-p0/bin/ruby'
 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 " CtrlP
 nnoremap <silent> t :CtrlP<cr>
 let g:ctrlp_working_path_mode = 2
