@@ -99,6 +99,8 @@ nmap <leader>gl :Glog<CR>
 nmap <leader>gc :Gcommit<CR>
 nmap <leader>gp :Git push<CR>
 
+" Format JSON
+map <leader>jp :%!python -m json.tool<CR>
 
 " Yank from current cursor position to end of line
 map Y y$
