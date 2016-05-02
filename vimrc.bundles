@@ -14,11 +14,14 @@ Plugin 'tpope/vim-rake'
 Plugin 'tpope/vim-endwise'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
+Plugin 'elzr/vim-json'
+
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Lokaltog/powerline'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'kien/ctrlp.vim'
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'rizzatti/dash.vim'
 
 " Colors
 Plugin 'vim-scripts/Colour-Sampler-Pack'
@@ -33,6 +36,8 @@ Plugin 'TechnoGate/janus-colors'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'christoomey/vim-tmux-runner'
 Plugin 'thoughtbot/vim-rspec'
+Plugin 'mxw/vim-jsx'
+
 
 " Languages
 Plugin 'tpope/vim-haml'

@@ -73,6 +73,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['jsxhint']
+let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
 
 " CtrlP
 nnoremap <silent> t :CtrlP<cr>
@@ -99,6 +101,9 @@ nmap <leader>gl :Glog<CR>
 nmap <leader>gc :Gcommit<CR>
 nmap <leader>gp :Git push<CR>
 
+
+" React JSX
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 " Format JSON
 map <leader>jp :%!python -m json.tool<CR>
 
