@@ -3,8 +3,6 @@
 
 # export CC=gcc-4.2.1
 export CDPATH=.:~:~/Code
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 PATH=$PATH:/usr/local/mysql/bin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
 export ANDROID_HOME=/usr/local/opt/android-sdk
@@ -13,3 +11,6 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
+
+alias inflate='ruby -r zlib -e "STDOUT.write Zlib::Inflate.inflate(STDIN.read)"'
+
